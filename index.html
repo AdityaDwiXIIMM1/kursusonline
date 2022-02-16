@@ -1,0 +1,475 @@
+<html> 
+<head>
+    <meta charset="utf-8"> 
+<title>  Menu Utama </title>
+
+    <style>
+        html{    
+            scroll-behavior: smooth !important;
+            background-color: white;
+        }
+        ::selection {
+            background-color: #352e7e;
+            color: #fff;
+        }
+
+        
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            
+            margin:0;
+            font-family: "Helvetica";
+        }
+        
+        .header1 {
+        height: 15px;
+        background-color:burlywood;
+        }
+    .header2 {
+        
+        height: 80px;
+        margin-top: auto;
+        
+        }
+    .header-logo img{
+        float: left;
+        display:block;
+        width:60px;
+        margin-left: 400px ;
+        margin-right: -600px;
+        margin-top: 10px;
+        }
+    .header-list ul{
+        background-color: khaki;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-list li {
+        background-color: khaki;
+        border-bottom:solid transparent 1px;
+        transition:all 0.5s;
+        list-style-type: none;
+        float: left;
+        padding : 20px 40px;
+        margin-left: 5px ;
+        margin-top: 15px ;
+        color:black;
+        }
+
+        .header2 li:hover {
+            padding:10px 40px;
+            cursor:pointer;
+            border-bottom:solid black 1px;
+            color:#deb887;
+        }
+        a, a:hover, a:active {
+      text-decoration: none;
+      color: inherit;
+    }
+    
+    .bg-image {
+        background-image: url("a4.jpg");
+        filter: blur(3px);
+        height: 80%;
+        background-position: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+.bg-text {
+  font-size: 37px;
+  color: khaki;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+    
+    .iklan{
+        height: 1000px;
+        background-color:khaki;
+
+    }
+    .iklan h3{
+        font-size: 35px;
+    }
+    .kolom {
+        margin-top: 10%;
+    
+    margin-left: 10%;
+    height: 400px;
+    float: left;
+    width: 50%;
+    
+  }
+  
+  .kolom2 {
+    
+    margin-right: 10%;
+    height: 400px;
+    float: right;
+    width: 50%;
+    
+  }
+  .desc {
+    list-style-type: none;
+    border: 0px solid #eee;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+  }
+  
+  .program .desc .subhead {
+    
+    transition: 0.5s;
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .program .subhead:hover{
+      background-color: darkcyan;
+      transition: 0.5s;
+  }
+  
+  .desc .subhead {
+    cursor: default;
+    transition: 0.5s;
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .subhead:hover{
+      background-color: brown;
+      transition: 0.5s;
+  }
+  
+  .desc li {
+   
+    padding: 20px;
+    text-align: center;
+  }
+  .desc li p {
+    
+    padding: 20px;
+    text-align: justify;
+  }
+  
+  .desc .grey {
+    background-color: #eee;
+    
+    font-size: 20px;
+  }
+  .grey a{
+      text-align: center;
+  }
+  
+  
+  .program {
+    cursor: default;
+    height: 100px;
+    width: 50%;
+    margin: auto;
+    
+  }
+
+  .isi {
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 100px;
+  }
+
+  .list{
+    
+    float: left;
+    height: 800px;
+    width: 20%;
+    margin-left: 60px;
+    
+  }
+  .list .desc{
+    
+    border: 10px solid#111;
+  }
+  .list .desc .subhead{
+    
+    height: 220px;
+    background-color: transparent;
+    color: black;
+  }
+  .list .desc .khaki li  {
+    
+    padding: 20px;
+    text-align: justify;
+  }
+  .list .khaki{
+    height: 600px;
+    border-top: 10px solid #111;
+    background-color: khaki;
+    color: black;
+  }
+  .list img{
+    transition: all 0.5s;
+    width:75%;
+    position:relative;
+    bottom:10px;
+  }
+  .list img:hover{
+    width:81%;
+
+  }
+  .list .khaki h2{
+    transition: 0.4s;
+    color: black;
+    cursor: default;
+  
+  }
+  .list .khaki h2:hover{
+    transition: 0.4s;
+    color: burlywood;
+    cursor: default;
+  }
+  .proof{
+    border: 0px solid white;
+    border-radius: 100px;
+    margin-top: 1000px;
+    height: 800px;
+    width:90%;
+    position: relative;
+    left:80px;
+    background-color: lightgrey;
+  }
+  .proof h1{
+    position: absolute;
+    left: 480px;
+    font-size: 60px;
+    color: rgb(61, 11, 61);
+  }
+
+  .proof-list{
+    position: absolute;
+    top: 150px;
+  }
+  .proof-list .subhead{
+    background-color: transparent;
+  }
+  .proof-list .subhead:hover{
+    background-color: none;
+  }
+  .proof-list img{
+    border:0px ;
+    border-radius: 60px;
+  }
+  .proof-list h3{
+    color: darkgray;
+  }
+    .footer {
+    margin-top: 100px;
+    background-color: rgb(112, 103, 60);
+    height: 400px;
+    padding: 40px;
+    }
+    .footer-quick{
+      margin-top: -55px;
+      float: left;
+      width: 300px;
+      margin-left: 50px;
+    }
+    .footer-quick li {
+    
+    color:rgb(170, 160, 160);
+    margin-bottom: 10%;
+    list-style: none;
+    transition: 0.35s;
+    }
+    .footer-quick li:hover {
+    cursor: pointer;
+    color:#deb887;
+    }
+    hr {
+       width:100%; height:2px; background: #fff ;
+    
+    }
+
+
+    .footer-urut {
+      width: 300px;
+    float: right;
+    margin-right: 50px;
+    
+    }
+    .footer-urut img{
+      transition: 0.35s;
+      color: white;
+      
+      width:40px;
+      float: left;
+      margin-right: 5%;
+  
+    }
+    .footer-urut img:hover {
+      filter: invert(100%);
+      transition: 0.5s;
+    }
+    .footer-urut2{
+      margin-left:580px ;
+    }
+    .footer-urut li {
+    
+    color:rgb(170, 160, 160);
+    list-style: none;
+    
+    transition: 0.35s;
+    }
+    .footer-urut li:hover {
+    cursor: pointer;
+    color:#deb887;
+    }
+    </style>
+</head>
+<body>
+    <div class="header1"></div>
+    <div class="header2">
+        <div class="header-logo"><img src="Tetra1.jpg"></div>
+        <div class="header-list">
+             <ul>
+                 <li><a href ="index.html" >Home</a></li>
+                 <li><a href ="contact.html" >Contact</a></li>
+                 <li><a href ="Product.html">Product</a></li>
+             </ul>
+        </div>
+     </div>
+
+     <div class="bg-image"></div>
+
+     <div class="bg-text">
+        <h1>Kursus Pemrograman Web Developer</h1>
+        <h1>TETRA CORP</h1>
+     </div>
+
+    <div class="iklan">
+        <div class="kolom">
+            <ul class="Desc">
+              <li class="subhead">Kursus Umum</li>
+              <li class="grey"><p>TETRA CORP menerapkan pembelajaran coding berbasis project base learning. Pada kursus coding ini, peserta bisa  belajar secara disconnected atau on the web. Training akan dipandu oleh mentor secara langsung melalui tatap muka dikelas bagi yang offline, dan untuk yang online peserta akan dipandu oleh coach melalui gathering menggunakan aplikasi zoom.</p></li>
+            </ul>
+          </div>
+
+          <div class="kolom2">
+            <ul class="Desc">
+              <li class="subhead">Kursus Online</li>
+              <li class="grey"><p>Kami menawarkan layanan khusus kepada peserta yang ingin belajar coding tetapi dibatasi oleh waktu dan jarak. TETRA BETA adalah aplikasi kursus coding online dalam bentuk video kursus coding yang dapat diakses dari mana saja, kapan saja. kursus video dilakukan oleh instruktur yang berkualitas untuk menyajikan cara belajar yang sangat mudah dipahami.</p></li>
+            </ul>
+          </div>
+    </div>
+
+    <div class="program">
+      <ul class="Desc">
+        <li class="subhead">Web Developement</li>
+      </ul>
+    </div>
+    <div class="isi">
+      <p>Beberapa Bahasa Web Developer yang akan kami gunakan di kursus kami</p>
+    </div>
+    <div class="list">
+      <ul class="Desc">
+        <li class="subhead"><img src="html.png"></li>
+        <li class="khaki">
+          <h2>WEB DESIGN</h2>
+          <p>Pembuatan situs dimulai dengan desain web. Mari kita lihat proses pembuatan website di rumah. Konstruksi situs web adalah proses pembuatan situs web dan  mencakup berbagai aspek seperti tata letak halaman situs web, konten, dan desain grafis. 
+            Dalam kursus ini Anda akan belajar cara membuat  halaman web. Dapatkan pengetahuan dasar situs web, dari HTML dan CSS hingga Javascript. Kemudian Anda juga akan belajar bagaimana membangun halaman web yang responsif dengan Bootstrap.</p></li>
+            </ul>
+      </ul>
+    </div>
+    <div class="list">
+      <ul class="Desc">
+        <li class="subhead"><img src="php.png"></li>
+        <li class="khaki">
+          <h2>PHP BASIC</h2>
+          <p>Kursus PHP ini adalah kursus intensif yang dirancang khusus bagi mereka yang ingin belajar bagaimana membangun sebuah website. Di kelas ini, Anda akan belajar  cara membuat website dinamis  menggunakan bahasa pemrograman PHP dan database MySQL. Bahasa Pemrograman 
+ PHP adalah bahasa yang paling banyak digunakan untuk membuat website. Selain itu, PHP relatif sederhana, sehingga siapa pun, termasuk pemula, dapat mempelajarinya.</p></li>
+      </ul>
+
+    </div>
+    <div class="list">
+      <ul class="Desc">
+        <li class="subhead"><img src="phplaravel.png"></li>
+        <li class="khaki">
+          <h2>PHP LARAVEL</h2>
+          <p>Laravel adalah salah satu framework PHP  paling populer dan  banyak digunakan di  dunia untuk membangun aplikasi web  dari proyek kecil hingga besar. Kerangka kerja ini banyak digunakan oleh pengembang web karena kinerja, fungsionalitas, dan skalabilitasnya. 
+            Kerangka kerja ini mengikuti struktur MVC (Model View Controller). MVC adalah  metode aplikasi yang memisahkan data dari tampilan berdasarkan komponen aplikasi seperti  manipulasi data, pengontrol, dan antarmuka pengguna. Laravel memudahkan untuk membangun sebuah situs web. Setelah mempelajari PHP, Anda dapat melanjutkan ke kursus Laravel PHP.</p></li>
+            </ul>
+  
+    </div>
+    <div class="list">
+      <ul class="Desc">
+        <li class="subhead"><img src="vuejs.png"></li>
+        <li class="khaki">
+          <h2>VueJS</h2>
+          <p>VueJS adalah salah satu kerangka kerja Javascript paling populer. Vue JS adalah framework progresif yang sangat membantu pengembang front-end membuat halaman web progresif dan dinamis (aplikasi halaman tunggal). 
+            Bahasa pemrograman yang digunakan adalah Javascript,  bahasa pemrograman yang digunakan untuk mengembangkan aplikasi website yang dapat berjalan pada platform yang berbeda. Untuk menyelesaikan kursus ini, Anda setidaknya telah mempelajari dasar-dasar pemrograman Javascript.</p></li>
+            </ul>
+ 
+    </div>
+    <div class="proof">
+      <h1>APA KATA DIA</h1>
+
+      <div class="proof-list">
+
+        <ul class="Desc">
+        <li class="subhead"><img src="cz.jpg"></li>
+        <li class="khaki">
+          <h2>Changpeng Zhao</h2>
+          <h3>CEO BINANCE</h3>
+          <p>Pelatihan di TETRA CORP sangat bagus dan inovatif serta pelatihannya sangat jelas dan sistematis. Di Indonesia, pendidikan coding seperti  TETRA CORP sulit ditemukan bahkan di universitas atau sekolah.Tenaga pengajar kompetent. Kurikulum pengajaran menarik dan padat. Suasana kursus yang nyaman dan sangat mendukung.
+          </p></li>
+            </ul>
+
+
+      </div>
+    </div>
+
+
+    <div class="footer">
+             <div class="footer-urut">
+                 <ul>
+                     <h3>FOLLOW US</h3><hr/>
+                     <li class="Gambar"></li>
+                     <li><a href="https://www.instagram.com/erusan077/"><img src="ig.png"></a></li>
+                     <li><a href="https://api.whatsapp.com/send?phone=6285156108602"><img src="wa.png"></a></li>
+                     <li><a href="https://www.youtube.com/channel/UCxZwtOD6BMoPyzT7Ui00-NA"><img src="yt.png"></a></li>
+                     <li><a href="https://www.facebook.com/adityadwi.erlangga.16"><img src="fb.png"></a></li>
+                 </ul>
+             </div>
+             <div class="footer-urut2">
+              <ul>
+                <p>&copy; 2022 TETRA CORP</p>
+              </ul>
+          </div>
+
+          <div class="footer-quick">
+            <ul>
+                <h3>QUICK LINK</h3><hr/>
+                <li class="Gambar"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Product.html">Product</a></li>
+            </ul>
+        </div>
+            
+
+
+    </div>
+</body>
+</html>
+        
